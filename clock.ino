@@ -1,7 +1,7 @@
 #include "LiquidCrystal.h"
 
-LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 const int rs = 2, en = 3, d4 = 4, d5 = 5, d6 = 6, d7 = 7;
+LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 int cs = 9;
 const int contrast = 100;
 int h = 12;
@@ -60,7 +60,7 @@ void loop()
     if (flag == 1)
         lcd.print(" PM");
     lcd.setCursor(0, 1);
-    lcd.print("Hello world!");
+    lcd.print("Arduino Clock!");
 
     for (int i = 0; i < 5; i++)
     {
@@ -141,7 +141,7 @@ void loop()
                     lcd.print(" PM");
 
                 lcd.setCursor(0, 1);
-                lcd.print("Arduino LCD Clock!");
+                lcd.print("Arduino Clock!");
             }
         }
 
